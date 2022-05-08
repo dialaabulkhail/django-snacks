@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}About Page{% endblock %}
+
+{% block header %}About{% endblock %}
+
+
+{% block navigation %}
+<a href="./home">Home</a>
+<a href="./contact">Contact</a>
+{% endblock %}
+
+
+{% block about %}
+<h3 style="margin: 30px; margin-top: 50px; color: rgba(16, 23, 26, 0.651);"> About Us</h3>
+<p style="color: rgba(0, 0, 0, 0.555); background-color: rgba(255, 255, 255, 0.596); margin: 20px; font-weight: bolder; text-align: center;">This Webpage was designed using Django Framework, Python programming language, HTML and CSS markup languages.
+    The idea behind this template is very simply, which is to present some beauty products with a short description about them and a link to the source page of each product without using any API's or datasets from anywhere.
+    This is the About page. It has two navigations: one to the home page where all products are presented and the other is for the contact page.
+</p>
+
+<h3  style="margin: 30px; margin-top: 50px; color: rgba(16, 23, 26, 0.651)">Resources</h3>
+<ul><li><a href="https://www.w3schools.com/css/default.asp">CSS</a></li>
+    <li><a href="https://unsplash.com/s/photos/cosmetics">Products Images</a></li>
+    <li><a href="https://www.google.com/search?q=products+beauty&source=lmns&bih=625&biw=1366&hl=en&sa=X&ved=2ahUKEwjY8rGjrtD3AhVnxoUKHVZGBE8Q_AUoAHoECAEQAA">links of pages</a></li>
+    <li><a href="https://fonts.google.com/">fonts</a></li>
+</ul>
+{% endblock%}
+
+
+
+<style>
+ div.padding {
+    margin: 30px;
+ }
+
+</style>

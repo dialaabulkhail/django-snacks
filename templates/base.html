@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+    </style>
+<body>
+    <h1>{% block header %}{% endblock %}</h1>
+    <div class="nav">{% block navigation %}{% endblock %}</div>
+    <div class="cards">{% block cards%}{% endblock %}</div>
+    <div class="aboutus">{% block about %}{% endblock%}</div>
+
+</body>
+
+<footer>
+    <p>{% block footer %}Beauty cosmetics webpage with Django framework{% endblock %}</p>
+    <a href="https://github.com/dialaabulkhail/django-snacks">Link to GitHub Repo</a>
+</footer>
+
+
+<style>
+    
+    body {
+        font-family: 'Raleway', sans-serif;
+        background-color: rgba(223, 231, 233, 0.562);
+        color: rgba(0, 0, 0, 0.274);
+    }   
+    footer {
+        margin-top: 1000px;
+        text-align: center;
+        padding: 1px;
+        background-color: rgba(100, 184, 184, 0.459);
+        color: white;
+    }
+    div.nav {
+        background-color: rgba(64, 109, 109, 0.356);
+        overflow: hidden;
+        color: white;
+    }
+    div.nav a {
+        color: white;
+        float: left;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    div.nav a:hover {
+        background-color: rgba(255, 255, 255, 0.514);
+        color: rgb(255, 255, 255);
+    }
+ 
+</style>
+
+</html>
