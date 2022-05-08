@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block title %}Home
+<style>
+
+
+</style>{% endblock %}
+
+{% block header %}Home{% endblock %}
+
+{% block navigation %}
+<a href="./about">About</a>
+<a href="http://127.0.0.1:8000/admin/">Explore</a>
+<a href="./about">Contact</a>
+{% endblock %}
+
+{% block cards %}<div class="gallery">
+    <a
+        href="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80">
+        <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80"
+            alt="Cinque Terre" width="600" height="400" </a>
+        <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+    <a
+        href="https://images.squarespace-cdn.com/content/v1/59cfab4f2aeba5a6d2ebb899/1600201580851-2UQS29EN3T83ZS4QK4SY/20-0716-Native-Atlas1631.jpg?format=1000w">
+        <img src="https://images.squarespace-cdn.com/content/v1/59cfab4f2aeba5a6d2ebb899/1600201580851-2UQS29EN3T83ZS4QK4SY/20-0716-Native-Atlas1631.jpg?format=1000w"
+            alt="Cinque Terre" width="600" height="400" </a>
+        <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+    <a
+        href="https://images.squarespace-cdn.com/content/v1/5a1fac7e914e6b30d737146f/1635042764139-4C95ZAKA0I3UKCFI8QVH/228A9754.jpg">
+        <img src="https://images.squarespace-cdn.com/content/v1/5a1fac7e914e6b30d737146f/1635042764139-4C95ZAKA0I3UKCFI8QVH/228A9754.jpg"
+            alt="Cinque Terre" width="600" height="400" </a>
+        <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+    <a
+        href="https://images.unsplash.com/photo-1624984672334-ad85c5b0f43f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c2VydW18ZW58MHx8MHx8&w=1000&q=80">
+        <img src="https://images.unsplash.com/photo-1624984672334-ad85c5b0f43f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c2VydW18ZW58MHx8MHx8&w=1000&q=80"
+            alt="Cinque Terre" width="600" height="400" </a>
+        <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+    <a href="https://images.unsplash.com/photo-1617897903246-719242758050?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80
+        ">
+        <img src="https://images.unsplash.com/photo-1617897903246-719242758050?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80
+        " alt="Cinque Terre" width="600" height="400" </a>
+        <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+    <a
+        href="https://images.unsplash.com/photo-1614859137322-20b54ff5d179?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bG90aW9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80">
+        <img src="https://images.unsplash.com/photo-1614859137322-20b54ff5d179?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bG90aW9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+            alt="Cinque Terre" width="600" height="400" </a>
+        <div class="desc">Add a description of the image here</div>
+</div>
+
+
+<style>
+    div.gallery {
+        margin: 20px;
+        border: 1px solid rgb(255, 255, 255);
+        float: left;
+        width: 180px;
+        box-shadow: 0 8px 8px #394a5160;
+        transition: 0.1s;
+    }
+
+    div.gallery:hover {
+        border: 1px solid rgba(237, 243, 245, 0.568);
+        box-shadow: 5px 5px 20px 5px #2c241860;
+        transform: scale(1.02);
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.desc {
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        background-color: rgba(144, 157, 163, 0.123);
+        color: rgb(0, 0, 0);
+    }
+
+    div.desc:hover {
+        background-color: rgba(144, 157, 163, 0.397);
+    }
+</style>
+{% endblock %}
