@@ -19,8 +19,9 @@
 </body>
 
 <footer>
-    <p>{% block footer %}Beauty cosmetics webpage with Django framework{% endblock %}</p>
+    {% block footer %}
     <a href="https://github.com/dialaabulkhail/django-snacks">Link to GitHub Repo</a>
+    {% endblock %}
 </footer>
 
 
@@ -32,10 +33,10 @@
         color: rgba(0, 0, 0, 0.274);
     }   
     footer {
-        margin-top: 1000px;
+        margin-top: 700px;
         text-align: center;
         padding: 1px;
-        background-color: rgba(100, 184, 184, 0.459);
+        background-color: rgba(87, 134, 134, 0.384);
         color: white;
     }
     div.nav {
